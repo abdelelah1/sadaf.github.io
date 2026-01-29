@@ -1,0 +1,187 @@
+/* 1. FONT SETUP */
+/* You must have the DG Ghareeb font file in a 'fonts' folder */
+@font-face {
+    font-family: 'DG Ghareeb';
+    src: url('fonts/Dg-Ghareeb.woff2') format('woff2'),
+         url('fonts/Dg-Ghareeb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --accent-color: #333333;
+    --font-main: 'DG Ghareeb', sans-serif; /* Applied as requested */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem; /* Spacing out S A D A F */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* Placeholder background - replace with your fashion photography */
+    background: #f4f4f4; 
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.main-title {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.cta-btn {
+    padding: 1rem 3rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: var(--accent-color);
+}
+
+/* Arabic Watermark Layer */
+.arabic-watermark {
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    font-size: 15rem;
+    opacity: 0.05; /* Subtle background effect */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #e0e0e0; /* Replace with <img> tags later */
+    margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.brand-column h2 {
+    font-size: 3rem; /* S F logo size */
+}
+
+.arabic-footer {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.links-column a {
+    color: var(--bg-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border-top: 1px solid #333;
+    padding-top: 2rem;
+}

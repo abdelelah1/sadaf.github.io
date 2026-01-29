@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADAF | Modern Apparel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>S A D A F</h1> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="subtitle">New Collection [XL]</p>
+            <h2 class="main-title">THE MEANING BEHIND<br>THE FORM</h2>
+            <button class="cta-btn">Explore S F</button>
+        </div>
+        <div class="arabic-watermark">صدف</div>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <div class="image-placeholder"></div>
+            <h3>Oversized Tee</h3>
+            <p>$45.00</p>
+        </div>
+        <div class="product-card">
+            <div class="image-placeholder"></div>
+            <h3>Structured Hoodie</h3>
+            <p>$85.00</p>
+        </div>
+        <div class="product-card">
+            <div class="image-placeholder"></div>
+            <h3>Cargo Trousers</h3>
+            <p>$110.00</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand-column">
+                <h2>S F</h2>
+                <p class="arabic-footer">صدف</p>
+            </div>
+            <div class="links-column">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 SADAF Brand. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
